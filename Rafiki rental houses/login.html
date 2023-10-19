@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login, Sign Up, Forgot Password</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: left;
+            margin: 50px;
+            background-color: grey;
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 300px;
+            margin: 20px;
+            color: #752e2e;
+        }
+        input {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login</h1>
+    <form action="login.php" method="post">
+        <input type="email" name="email" placeholder="Email" required><br>
+        <input type="password" name="password" placeholder="Password" required><br>
+        <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+    <p><a href="forgotpassword.html">Forgot Password?</a></p>
+</body>
+</html>
