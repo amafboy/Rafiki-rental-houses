@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check"> class="checkbtn">
+            <i class="fas fa-bars"></i>
+         <label class="logo"<Rafiki Rental Houses></label>
+        <ul>
+                <h1>Rafiki Rental Houses</h1>
+                <li><a class="active" href="Home.html">Home</a></li>
+                <li><a class="active" href="about.html">About Us</a></li>
+                <li><a class="active" href="Properties.html">Properties</a></li>
+                <li><a class="active" href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <style>
+            nav{
+                background-color: cornflowerblue;
+                background: scroll;
+                height: 80px;
+                width: 100%;
+            }
+            label.logo{
+                color: brown;
+                font-size: 45px;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+                line-height: 80px;
+                padding: 0 100%;
+            }
+            nav ul {
+           list-style-type: none;
+           padding: 0;
+            }
+            nav ul li {
+            display: inline;
+            margin: 0 10px;
+            }
+            nav ul li a {
+            color: #fff;
+            text-decoration: none;
+}
+            }
+            a.active{
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+           
+                }
+                ul{
+                    position: fixed;
+                    width: 100%;
+                    height: 100vh;
+                    background: brown;
+                    top: 80px;
+                    left: -100%;
+                    text-align: center;
+                    transition: all .5s;
+                }
+                nav ul li{
+                    display: block;
+                    margin: 50px 0;
+                    line-height: 30px;
+                }
+                nav ul li a{
+                    font-size: 20px;
+                }
+                a:hover,a:active{
+                    color: #0082e6;
+                    background: none;
+                }
+                #check:checked ul{
+                    left: 0;
+                }
+            h1{
+                color: firebrick;
+                font-size: 100px;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bolder;
+            }
+            body{
+                background-color: brown;
+                margin: 0;
+                background-image: url(kapken.jpg);
+                height: 100%;
+                overflow: visible;
+                background-size: 100% auto;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            title{
+                background-color: cadetblue;
+                font-size: 100px;
+                color: firebrick ;
+                font-style: oblique;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-weight: bolder;
+
+            }
+            .fullscreen-image{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+            a{
+                color: blue;
+                font-size: 40px;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+            }
+            p{
+                color: blanchedalmond;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 30px;
+                font-weight: bold;
+
+            }
+            footer{
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                padding: 10px 0;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
+            image{
+                width: 300px;
+                height: 200px;
+            }
+        </style>
+    </header>
+    
+    <footer>
+        <p>&copy; 2023 Rafiki Rental Houses</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+ 

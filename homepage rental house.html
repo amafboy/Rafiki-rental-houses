@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafiki Rental House Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Properties</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="kapken.jpg" alt="Kapken image">
+            <div class="overlay">
+                <div class="container">
+                    <h1>Welcome to Kapken</h1>
+                    <p>Your perfect rental house is just a click away</p>
+                    <button>Browse Properties</button>
+                </div>
+            </div>
+        </section>
+        <section class="featured-properties">
+            <h2>Featured Properties</h2>
+            <ul>
+                <li>
+                    <img src="kapken property.jpg" alt="property 1">
+                    <div class="property-info">
+                        <h3> Property 1</h3>
+                        <p>Big sized bedsitters, 2 bedrooms and 3 bedrooms available.</p>
+                        <button>View Details</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="kapken.jpg" alt="Property 2">
+                    <div class="property-info">
+                        <h3> Property 2</h3>
+                        <p>Ample parking area.</p>
+                        <button>View Details</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="security.jpg" alt="Property 3">
+                    <div class="property-info">
+                        <h3> Property 3</h3>
+                        <p>24 hours maximum security through installation of CCTV cameras.</p>
+                        <button>View Details</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="testimonials">
+            <h2>What our customers say</h2>
+            <blockquote>
+                <p>I am overjoyed to share my experience of finding and moving into my new home. From the moment I stepped through the door, I knew this was the place I had been dreaming of. The entire process, from viewing properties to finalizing the paperwork, was seamless and enjoyable.
+
+                    The attention to detail and dedication of the real estate team exceeded my expectations. They truly listened to my needs and preferences, ensuring that every aspect of the house met my requirements. The result is a home that not only meets my practical needs but also resonates with my personal style.
+                    
+                    I am particularly grateful for the patience and expertise of the real estate agent who guided me through the process. Their knowledge of the local market and commitment to finding the perfect fit for me was invaluable. They went above and beyond to ensure that I was not just satisfied, but genuinely thrilled with my new home.</p>
+                <footer>Ali Athman - Happy Customer</footer>
+            </blockquote>
+            <blockquote>
+                <p>The search for a new home can be a daunting task, but my recent experience was nothing short of extraordinary. From the first consultation to the final walk-through, every step of the process was handled with utmost professionalism and care.
+
+                    What struck me most was the genuine interest the real estate team took in understanding my vision. They patiently listened to my needs, preferences, and concerns, ensuring that every property we viewed was a potential match. Their expertise and knowledge of the market were evident, and it instilled in me a sense of confidence that I was in capable hands.
+                    
+                    When I finally set foot in the house I now call home, I was overwhelmed with a sense of belonging. It was as if the walls themselves were welcoming me. The attention to detail and craftsmanship was evident in every corner, and it was clear that this house was more than just a structure—it was a place where memories would be made.</p>
+                <footer>Onsase Vivian - Satisfied Client</footer>
+            </blockquote>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Rafiki Rental Houses</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+ {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav li {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+ header nav a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+ header nav a:hover {
+    color: #c5c5c5;
+ }
+
+ main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero {
+    background-image: url('kapken.jpg');
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+ .hero img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     opacity: 0.6;
+     filter: brightness(60%);
+     transition: all 0.3s ease-in-out;
+ }
+
+ .hero img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+ .hero img:hover {
+    opacity: 1;
+    filter: brightness(100%);
+}
+
+ .hero img:hover::before {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.featured-properties {
+    margin-top: 40px;
+}
+
+ .featured-properties h2 {
+    margin-bottom: 20px;
+}
+
+ .featured-properties ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ .featured-properties li {
+    margin-bottom: 20px;
+}
+
+ .featured-properties li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+ .featured-properties .property-info {
+    position: relative;
+}
+
+ .featured-properties .property-info h3 {
+    margin-top: 0;
+}
+
+ .featured-properties .property-info p {
+    color: #999;
+    margin-bottom: 10px;
+}
+
+ .featured-properties .property-info button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+ .featured-properties .property-info button:hover {
+    background-color: #c5c5c5;
+}
+
+.testimonials {
+    margin-top: 40px;
+}
+
+ .testimonials h2 {
+    margin-bottom: 20px;
+}
+
+ .testimonials blockquote {
+    font-size: 18px;
+    border-left: 4px solid #ddd;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+ .testimonials footnote {
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+ footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
