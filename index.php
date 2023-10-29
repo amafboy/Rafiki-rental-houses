@@ -6,8 +6,8 @@
 <body>
 <h1>Data from MySQL</h1>
 <?php
-include 'connect.php';
-$sql = "SELECT * FROM `users`;";
+include 'connect.php' ;
+$sql = "SELECT * FROM `users`";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
@@ -19,26 +19,19 @@ if ($result->num_rows > 0) {
 $conn->close();
 ?>
 <?php
-$servername = "localhost";
-$username = "username";
-$password = "password";
-$dbname = "rafiki";
-$conn = new mysqli($servername, $username, $password, $dbname);
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+function OpenCon()
+{
+$dbhost = "localhost";
+$dbuser = "root";
+$dbpass = "";
+$db = "rafiki";
+$conn = new mysqli($dbhost, $dbuser, $dbpass,$dbname) or die("Connect failed: %s\n". $conn -> error);
+return $conn;
 }
-$sql = "SELECT * FROM `users`;";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-    while($row = $result->fetch_assoc()) {
-        echo "ID: " . $row["id"]. " - Name: " . $row["name"]. "<br>";
-    }
-} else {
-    echo "0 results";
+function CloseCon($conn)
+{
+$conn -> close();
 }
-
-$conn->close();
 ?>
 </body>
 </html>
